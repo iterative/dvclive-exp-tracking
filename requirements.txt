@@ -1,0 +1,6 @@
+dvc>=2.36.0
+dvclive>=1.1.0
+jupyterlab
+torch
+torchvision
+pytorch-lightning
