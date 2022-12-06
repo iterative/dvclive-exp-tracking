@@ -2,7 +2,9 @@
 
 Example repo to show how to start tracking experiments in DVC by adding DVCLive to your Python code.
 
-Instructions:
+Based on https://pytorch-lightning.readthedocs.io/en/stable/starter/introduction.html.
+
+## Instructions
 
 1. Clone the repo:
 
@@ -16,10 +18,10 @@ Instructions:
     pip install -r requirements.txt
     ```
 
-3. Open the Jupyter notebook and run the cells:
+3. Run the code in `dvclive_exp_tracking.py`:
 
     ```
-    jupyter lab dvclive_exp_tracking.ipynb
+    python train.py
     ```
 
 4. Compare experiments:
