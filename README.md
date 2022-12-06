@@ -24,7 +24,9 @@ Based on https://pytorch-lightning.readthedocs.io/en/stable/starter/introduction
     python train.py
     ```
 
-4. Compare experiments:
+4. Make some changes (for example, modify `encoder_size`) and run again.
+
+5. Compare experiments:
 
     a. VS Code: Use the [DVC extension](https://marketplace.visualstudio.com/items?itemName=Iterative.dvc).
 
