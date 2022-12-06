@@ -24,9 +24,11 @@ Instructions:
 
 4. Compare experiments:
 
-    a. VS Code: Use the DVC extension.
+    a. VS Code: Use the [DVC extension](https://marketplace.visualstudio.com/items?itemName=Iterative.dvc).
 
-    b. CLI:
+    ![vs code](vs_code.gif)
+
+    b. Command line:
 
         # Show the experiments table.
         $ dvc exp show
