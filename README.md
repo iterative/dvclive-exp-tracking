@@ -18,11 +18,7 @@ Based on https://pytorch-lightning.readthedocs.io/en/stable/starter/introduction
     pip install -r requirements.txt
     ```
 
-3. Run the code in `dvclive_exp_tracking.py`:
-
-    ```
-    python train.py
-    ```
+3. Run the code in `dvclive_exp_tracking.ipynb` or `train.py`.
 
 4. Make some changes (for example, modify `encoder_size`) and run again.
 
