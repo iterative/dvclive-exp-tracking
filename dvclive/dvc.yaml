@@ -5,3 +5,4 @@ metrics:
 plots:
 - plots/metrics:
     x: step
+- plots/images
