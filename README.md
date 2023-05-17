@@ -18,31 +18,29 @@ Based on https://pytorch-lightning.readthedocs.io/en/stable/starter/introduction
     pip install -r requirements.txt
     ```
 
-3. Run the code in `dvclive_exp_tracking.ipynb` or `train.py`.
+3. Run the code in [dvclive-exp-tracking.ipynb](dvclive-exp-tracking.ipynb) and get live updates to your metrics and plots inside the notebook.
 
-4. Make some changes (for example, modify `encoder_size`) and run again.
+4. Make some changes (for example, modify `lr`) and run again.
 
 5. Compare experiments:
 
     a. VS Code: Use the [DVC extension](https://marketplace.visualstudio.com/items?itemName=Iterative.dvc).
 
-    ![vs code](vs_code.gif)
+    ![vs code](vs_code.png)
 
     b. Command line:
 
         # Show the experiments table.
         $ dvc exp show
-         ────────────────────────────────────────────────────────────────────────────────
-          Experiment                 Created    train_loss   epoch   step   encoder_size
-         ────────────────────────────────────────────────────────────────────────────────
-          workspace                  -            0.024467       4     10   96
-          main                       10:46 AM            -       -      -   -
-          ├── 728aa53 [bumpy-tass]   10:53 AM     0.024467       4     10   96
-          ├── ce8adea [hyoid-bosk]   10:53 AM     0.016811       4     10   80
-          ├── bec3030 [agaze-gore]   10:52 AM     0.024214       4     10   32
-          ├── 0b9595f [myoid-areg]   10:52 AM     0.033773       4     10   16
-          └── 8466fbd [nival-flap]   10:52 AM     0.040422       0      2   64
-         ────────────────────────────────────────────────────────────────────────────────
+        ───────────────────────────────────────────────────────────────────────────────────────────── 
+        Experiment                 Created        train.loss   epoch   step   encoder_size   lr      
+        ───────────────────────────────────────────────────────────────────────────────────────────── 
+        workspace                  -                0.056163       4    999   64             0.001   
+        main                       Apr 28, 2023     0.056488       4    999   64             -       
+        ├── 2c232c6 [adunc-soja]   03:04 PM         0.056163       4    999   64             0.001   
+        ├── 5c2dad6 [conic-keys]   03:03 PM         0.056009       4    999   64             0.0001  
+        └── c28afc1 [ahull-chin]   03:03 PM          0.05897       4    999   64             0.01    
+        ───────────────────────────────────────────────────────────────────────────────────────────── 
 
         # Plot the diff of all experiments.
         $ dvc plots diff $(dvc exp list --name-only)
